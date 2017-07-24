@@ -1,0 +1,6 @@
+D:\users\administrator\Documents\Visual Studio 2013\Projects\SortCompare\SortCompare\bin\Debug\SortCompare.exe.config
+D:\users\administrator\Documents\Visual Studio 2013\Projects\SortCompare\SortCompare\bin\Debug\SortCompare.exe
+D:\users\administrator\Documents\Visual Studio 2013\Projects\SortCompare\SortCompare\bin\Debug\SortCompare.pdb
+D:\users\administrator\Documents\Visual Studio 2013\Projects\SortCompare\SortCompare\obj\Debug\SortCompare.csprojResolveAssemblyReference.cache
+D:\users\administrator\Documents\Visual Studio 2013\Projects\SortCompare\SortCompare\obj\Debug\SortCompare.exe
+D:\users\administrator\Documents\Visual Studio 2013\Projects\SortCompare\SortCompare\obj\Debug\SortCompare.pdb
