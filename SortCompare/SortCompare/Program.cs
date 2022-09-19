@@ -35,7 +35,6 @@ namespace SortCompare
             //Console.WriteLine("自带list sort算法运行时间：" + (System.Environment.TickCount - startTime));
             //Console.WriteLine("自带list sort算法运行结果");
             ////OutputData(dataList);
-
             ////Console.WriteLine("\n源:");
             ////OutputData(data);
             ///// linq 排序
@@ -56,14 +55,17 @@ namespace SortCompare
             //QuickSort<int>(data, 0, dataLength - 1);
 
             //ListSort<int>(new List<int>(data));
-            //LinqSort<int>(new List<int>(data));
+            //LinqSort<int>(new List<int>(ç));
             //HeapSort<int>(data,dataLength);
+
+            //SortHelper.Sort(data, 0, data.Length);
+
             int[] dataOrder = ListOrderBy<int>(new List<int>(data));
             Console.WriteLine("运行时间：" + (System.Environment.TickCount - startTime));
             Console.WriteLine("结果:");
-            //OutputData(dataOrder);
+            OutputData(data);
 
-            //HeapSort<int>(data, dataLength);
+            //HeapSort<int>(data, ç);
             //Console.WriteLine("源数据:");
             //OutputData(data);
         }
@@ -102,7 +104,7 @@ namespace SortCompare
         {
             for (int i = 0; i < dataLength; i++)
             {
-                if (i % 10 == 0 && i!=0)
+                if (i % 10 == 0 && i != 0)
                 {
                     Console.Write("\n");
                 }
@@ -135,11 +137,11 @@ namespace SortCompare
         }
 
 
-        static T[] ListSort<T>(List<T> source) where T: IComparable
+        static T[] ListSort<T>(List<T> source) where T : IComparable
         {
-            
+
             source.Sort((a, b) => a.CompareTo(b));
-            
+
 
             return source.ToArray();
         }
@@ -163,7 +165,7 @@ namespace SortCompare
         static void HeapSort<T>(T[] a, int size) where T : IComparable
         {
             /// 初始化堆
-            for (int i = size / 2 -1; i >= 0; i--)
+            for (int i = size / 2 - 1; i >= 0; i--)
             {
                 AdjustHeap<T>(a, i, size);
             }
@@ -206,9 +208,9 @@ namespace SortCompare
                 a[node] = tmp;
 
                 /// 调整Max节点
-                AdjustHeap<T>(a, max,size);
+                AdjustHeap<T>(a, max, size);
             }
         }
-       
+
     }
 }
